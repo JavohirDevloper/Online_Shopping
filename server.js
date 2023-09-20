@@ -18,9 +18,9 @@ app.use(morgan("dev"));
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
-});
+// app.get("/", (req, res) => {
+//   res.send("<h1>Welcome to ecommerce app</h1>");
+// });
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
